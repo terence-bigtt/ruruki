@@ -602,7 +602,7 @@ def cypher_eval(value, context):
 
 
 def parse(query_string):
-    p = Parser(q).Cypher()
+    p = Parser(query_string).Cypher()
     cypher_eval(p, {})
 
 
